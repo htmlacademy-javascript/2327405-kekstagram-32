@@ -6,14 +6,13 @@ const lineLength = function (line, maxLength) {
   }
 };
 
-const reverseLine = function (string) {
+const palidrom = function (string) {
   string = string.replaceAll(' ', '');
   string = string.toLowerCase();
   let reversed = '';
   for (let i = string.length - 1; i >= 0; i--) {
     reversed = reversed + string[i];
   }
-  console.log(string === reversed);
   return string === reversed;
 };
 
