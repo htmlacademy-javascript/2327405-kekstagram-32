@@ -16,7 +16,7 @@
 //   return string === reversed;
 // };
 
-function checkMinutes(time) {
+function chekMinutes(time) {
   const hour = time.split(':')[0];
   const minutes = time.split(':')[1];
   return hour * 60 + minutes;
