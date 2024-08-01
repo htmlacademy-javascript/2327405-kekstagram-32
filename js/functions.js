@@ -6,7 +6,7 @@ const lineLength = function (line, maxLength) {
   }
 };
 
-const palidrom = function (string) {
+const pallidrom = function (string) {
   string = string.replaceAll(' ', '');
   string = string.toLowerCase();
   let reversed = '';
