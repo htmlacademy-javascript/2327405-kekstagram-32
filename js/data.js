@@ -6,6 +6,14 @@ const URL = ['photos/1.jpg', 'photos/2.jpg', 'photos/3.jpg', 'photos/4.jpg', 'ph
 
 const LIKES = [15, 16, 17, 18, 25, 35, 153, 176, 133, 121, 119, 145, 200, 199, 198, 197, 195];
 
+const DESCRIPTION = [
+  'На море кайф',
+  'Нравится',
+  'Хочу так же',
+  'Как же круто',
+  'Хочу в отпуск'
+];
+
 const COMMENTS = [
   {
     id: 135,
@@ -45,15 +53,18 @@ const COMMENTS = [
   }
 ];
 
-const createWizard = () => ({
+const createPictures = () => ({
   id: getRandomArrayElement(ID),
   url: getRandomArrayElement(URL),
   likes: getRandomArrayElement(LIKES),
+  description: getRandomArrayElement(DESCRIPTION),
   comments: getRandomArrayElement(COMMENTS),
 });
 
-const similarWizards = Array.from({ length: 25 }, createWizard);
+const similarPicture = () => Array.from({ length: 25 }, createPictures);
 
-console.log(similarWizards);
+similarPicture();
 
-export { similarWizards };
+console.log(similarPicture());
+
+export { similarPicture };
