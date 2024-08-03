@@ -65,6 +65,4 @@ const similarPicture = () => Array.from({ length: 25 }, createPictures);
 
 similarPicture();
 
-console.log(similarPicture());
-
-export { similarPicture };
+export { similarPicture, LIKES, URL, COMMENTS, DESCRIPTION };
